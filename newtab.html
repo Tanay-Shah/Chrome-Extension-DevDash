@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Your Developer Dashboard</h1>
+
+    <!-- Task Manager -->
+    <div id="task-manager" class="widget">
+      <h2>Task Manager</h2>
+      <ul id="tasks-list"></ul>
+      <input type="text" id="new-task" placeholder="New task..." />
+      <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <!-- Code Editor -->
+    <div id="code-editor" class="widget">
+      <h2>Code Editor</h2>
+      <textarea id="editor" placeholder="Write your code here..." rows="8"></textarea>
+    </div>
+
+    <!-- GitHub PR Tracker -->
+    <div id="github-pr" class="widget">
+      <h2>GitHub Pull Requests</h2>
+      <button id="fetch-prs-btn">Fetch Pull Requests</button>
+      <ul id="pr-list"></ul>
+    </div>
+
+    <!-- Coding Challenges -->
+    <div id="coding-challenges" class="widget">
+      <h2>Daily Coding Challenge</h2>
+      <button id="fetch-challenges-btn">Get Challenge</button>
+      <div id="challenge-display"></div>
+    </div>
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>
